@@ -5,32 +5,77 @@
 }
 body{
     background-image: url("./assets/palacio.png");
-    background-position: center center;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
-h1{
+main{
     font-family: Sevillana, 'sans-serif';
-    font-size: 50px;
-    font-weight: 400;
-    color: white;
-    text-align: center;
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        font-size: 45px;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .img1{
+        height: 40vh;
+        margin-top: 11.3%;
+    }
+    .img2{
+        height: 60vh;
+        //margin-bottom: 5%;
+    }
+    button{
+        background-color: #007BFF;
+        font-family: inherit;
+        font-size: 25px;
+        cursor: pointer;
+        color: white;
+        width: 20vw;
+        height: 7vh;
+        margin-top: 5%;
+        border: none;
+        border-radius: 50px;
+    }
 }
-
-img{
-    height: 75vh;
-    margin: auto 30%;
+@media (max-width: 500px){
+    main{
+        h1{
+            font-size: 25px;
+        }
+        button{
+        background-color: #B74794;
+        margin-right: 0;
+        width: 50vw;
+        }
+        .img1{
+            margin-top: 63%;
+        }
+        .img2{
+            height: 40vh;
+            margin-top: 63%;
+        }
+    }
 }
-button{
-    background-color: #007BFF;
-    font-family: Sevillana, 'sans-serif';
-    font-size: 25px;
-    cursor: pointer;
-    color: white;
-    width: 20vw;
-    height: 7vh;
-    margin: auto 40%;
-    border: none;
-    border-radius: 20px;
+@media (max-width: 1050px){
+    main{
+        h1{
+            font-size: 1.5rem;
+        }
+        button{
+            background-color: #B74794;
+            width: 41vw;
+        }
+        .img1{
+            margin-top: 20%;
+        }
+        .img2{
+            margin-top: 5%;
+        }
+    }
 }
